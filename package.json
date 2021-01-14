@@ -1,0 +1,21 @@
+{
+  "name": "motivate-me",
+  "version": "1.0.0",
+  "description": "Members: Ahmed, Shane, Natan, Keith, Vijay",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aali0/motivate-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aali0/motivate-me/issues"
+  },
+  "homepage": "https://github.com/Aali0/motivate-me#readme"
+}
