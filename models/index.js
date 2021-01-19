@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "use strict"
 
 var fs = require("fs");
@@ -30,6 +31,8 @@ if (db[modelName].associate) {
   db[modelName].associate(db);
 }
 =======
+=======
+>>>>>>> 3777a7774840fa81dfc726c50c213723c183693b
 'use strict';
 
 const fs = require('fs');
@@ -61,6 +64,9 @@ Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }
+<<<<<<< HEAD
+>>>>>>> 3777a7774840fa81dfc726c50c213723c183693b
+=======
 >>>>>>> 3777a7774840fa81dfc726c50c213723c183693b
 });
 
@@ -68,7 +74,11 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 module.exports = db;
+=======
+module.exports = db;
+>>>>>>> 3777a7774840fa81dfc726c50c213723c183693b
 =======
 module.exports = db;
 >>>>>>> 3777a7774840fa81dfc726c50c213723c183693b

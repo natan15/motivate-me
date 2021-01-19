@@ -2,8 +2,13 @@
     "development": {
       "username": "root",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "password": null,
       "database": "quotes",
+=======
+      "password": "password",
+      "database": "project2",
+>>>>>>> 3777a7774840fa81dfc726c50c213723c183693b
 =======
       "password": "password",
       "database": "project2",
