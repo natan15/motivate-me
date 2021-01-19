@@ -17,6 +17,7 @@ app.get("/", function(req, res) {
 app.get("/logout", function(req, res) {
   var passport = require("../config/passport");
   passport.logout;
+  req.logout();
   res.sendFile(path.join(__dirname, "../public/main.html"));
  });
   
