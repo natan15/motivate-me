@@ -36,7 +36,9 @@ $(document).ready(function() {
   }
 
   function handleLoginErr(err) {
-    $("#alert .msg").text(err.responseJSON);
+    //$("#alert .msg").text(err.responseJSON);
+    $("#alert .msg").text("Sign up failed. Check email address and password," + "\n" + "or check to see if you are already signed up by going to the log in page.");
     $("#alert").fadeIn(500);
   }
-});
+});  
+ 
