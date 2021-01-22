@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+var controller = require("../controller/controller");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -46,4 +47,14 @@ module.exports = function(app) {
       });
     }
   });
+  //get route for quotes by Category
+  app.get("/api/quotes/:category", function(req, res) {
+      db.Categories.findAll({
+          where: {
+              category: req.params.category
+          }
+      }).then(function(dbQuotes){
+          res.json(dbQuotes).catch((err) => res.status(402).json(err))
+      })
+  })
 };
