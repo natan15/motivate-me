@@ -14,7 +14,14 @@ CREATE TABLE categories (
                         PRIMARY KEY (position)
                         );
 
-
+CREATE TABLE users (
+                        id int NOT NULL AUTO_INCREMENT,
+                        email varchar(255) NOT NULL,
+                        password varchar(255) NOT NULL,
+                        createdAt DATETIME NOT NULL,
+                        updatedAt DATETIME NOT NULL,
+                        PRIMARY KEY (id)
+                        );
 
 
 INSERT INTO categories VALUES(1,''Push yourself, because no one else is going to do it for you.- unknown'',Body,,);
