@@ -3,7 +3,7 @@ var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
-var expHandlebars = require("express-handlebars");
+var expHandlebars = require("express-handlebars")
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
@@ -15,13 +15,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 app.engine("handlebars", expHandlebars({defaultLayout:"main"}))
+
 // We need to use sessions to keep track of our user's login status
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
-
-// Static directory
-app.use(express.static("public"));
 
 // API Routes
 var routes = require("./routes");

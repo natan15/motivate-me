@@ -4,4 +4,18 @@ $(document).ready(function() {
     $.get("/api/user_data").then(function(data) {
       $(".member-name").text(data.email);
     });
+    
+Categories();
+
+  function Categories() {
+      $.get("/api/quotes/:category", function(data) {
+        var rowsToAdd = [];
+        for (var i = 0; i < data.length; i++) {
+          rowsToAdd.push(createCategoriesRow(data[i]));
+        }
+        renderCategoriesList(rowsToAdd);
+        nameInput.val("");
+      });
+    }
+
   });

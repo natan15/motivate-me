@@ -22,6 +22,16 @@ module.exports = {
         axios.get("http://quotes.rest/quote/search.json?minlength=100&maxlength=300")
         .then((res) => res.json(res.data))
         .catch((err) => res.status(422).json(err));
+
+    },
+    findAllWhere: function(req, res){
+        db.Categories.findAll({
+            where: {
+                category: req.params.category
+            }
+        }).then(function(dbQuotes){
+            res.json(dbQuotes).catch((err) => res.status(402).json(err))
+        })
     }
   
 }
