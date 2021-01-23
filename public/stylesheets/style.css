@@ -1,15 +1,4 @@
-form.signup,
-form.login {
-  margin-top: 50px;
-}
-html {
-  min-height: 100vh;
-  background: #ece9e6;
-  background-image: url("../images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position:relative;
-}
+
 #favebtn a {
   font-family: 'Fraunces', serif;
   font-size: 10pt;
@@ -400,4 +389,4 @@ html {
   opacity: 1;
   pointer-events: auto;
   transition: 1s;
-}
+} 
