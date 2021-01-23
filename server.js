@@ -15,12 +15,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 app.engine("handlebars", expHandlebars({defaultLayout:"main"}))
+
 // We need to use sessions to keep track of our user's login status
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+// API Routes
+var routes = require("./routes");
+
 // Requiring our routes
+app.use(routes);
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 

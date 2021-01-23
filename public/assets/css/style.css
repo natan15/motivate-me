@@ -1,4 +1,391 @@
-form.signup,
-form.login {
-  margin-top: 50px;
+
+#favebtn a {
+  font-family: 'Fraunces', serif;
+  font-size: 10pt;
+  position: relative;
+  color: #848484;
+  letter-spacing: 0.05em;
+  display:block;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #848484;
+  top:330px;
+  left:65px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  width: 140px;
+  height: 10px;
+  text-decoration: none;
 }
+
+#favebtn a:hover {
+  background-color: #F1836A;
+  border: 2px solid #F1836A;
+  color: #FFF8EE;
+}
+
+/* Add an active class to highlight the current page */
+#favebtn a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+#favebtn .icon {
+  display: none;
+}
+
+/* Style the links inside the navigation bar */
+
+.custom-select-wrapper {
+     left:50%;
+     position: relative;
+     user-select: none;
+     width: 200px;
+     height: 10px;
+}
+
+
+.custom-select__trigger {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 22px;
+     font-family: 'Fraunces', serif;
+     font-size: 10pt;
+     color: #FFF8EE;
+     letter-spacing: 0.05em;
+     height: 60px;
+     line-height: 60px;
+     background:transparent;
+     cursor: pointer;
+     border-radius: 25px;
+     border: 2px solid #F1836A;
+}
+
+.custom-options {
+     position: absolute;
+     display: block;
+     top: 100%;
+     left: 0;
+     right: 0;
+     border: 2px solid #394a6d;
+     border-top: 0;
+     background: #fff;
+     transition: all 0.5s;
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     z-index: 2;
+}
+.custom-select.open .custom-options {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: all;
+}
+.custom-option {
+     position: relative;
+     display: block;
+     padding: 0 22px 0 22px;
+     font-size: 22px;
+     font-weight: 300;
+     color: #F1836A;
+     line-height: 60px;
+     cursor: pointer;
+     transition: all 0.5s;
+}
+.custom-option:hover {
+     cursor: pointer;
+     background-color: #ebebeb;
+}
+.custom-option.selected {
+     color: #ffffff;
+     background-color: #F1836A;
+}
+.arrow {
+     position: relative;
+     height: 15px;
+     width: 15px;
+}
+ .arrow::before, .arrow::after {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     width: 0.15rem;
+     height: 100%;
+     transition: all 0.5s;
+}
+ .arrow::before {
+     left: -5px;
+     transform: rotate(45deg);
+     background-color:  #FFF8EE;
+}
+ .arrow::after {
+     left: 5px;
+     transform: rotate(-45deg);
+     background-color:  #FFF8EE;
+}
+ .open .arrow::before {
+     left: -5px;
+     transform: rotate(-45deg);
+}
+ .open .arrow::after {
+     left: 5px;
+     transform: rotate(45deg);
+}
+
+
+
+
+.topnav a {
+  font-family: 'Fraunces', serif;
+  font-size: 10pt;
+  position: relative;
+  color: #FFF8EE;
+  letter-spacing: 0.05em;
+  float: right;
+  display:block;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #FFF8EE;
+  margin-right: 20px;
+  right:40px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  width: 100px;
+  height: 10px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #F1836A;
+  border: 2px solid #F1836A;
+  color: #FFF8EE;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.pageframe {
+	width:cover;
+	height:cover;
+	background:transparent;
+	background-size: cover;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 3px solid #FFF8EE;
+}
+
+.heading {
+  font-family: 'Fraunces', serif;
+  font-size: 28pt;
+  position: relative; 
+  color: #FFF8EE;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+  top: 40px;
+  left: 50px;
+  letter-spacing: 0.05em;
+  display:inline;
+}
+
+.quotes {
+  top:100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  height: 24rem;
+  width: 18rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  border-radius: 20px;
+  background: #FFF8EE;
+  background: linear-gradient(to top, #FFF8EE, #fdf0dd);
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  /* content: ''; */
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  /* content: '0'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  /* content: '1'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  /* content: '2'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  /* content: '3'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  /* content: '4'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(5):before {
+  /* content: '5'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(6):before {
+  /* content: '6'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(7):before {
+  /* content: '7'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(8):before {
+  /* content: '8'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(9):before {
+  /* content: '9'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+} 
