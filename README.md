@@ -49,5 +49,5 @@ Growth
 *Universal Inspirational Quotes API*
 
 Install all packages from bash command line:
- npm -y init ; npm i bcryptjs ; npm i dotenv ; npm i express ; npm i express-handlebars ; npm i express-session ; npm i if-env ; npm i mysql2 ; npm i passport ; npm i passport-local ; npm i sequelize ; npm i sequelize-cli
+ npm -y init ; npm i bcryptjs ; npm i dotenv ; npm i express ; npm i express-handlebars ; npm i express-session ; npm i if-env ; npm i mysql2 ; npm i passport ; npm i passport-local ; npm i sequelize ; npm i sequelize-cli ; npm i axios
 
